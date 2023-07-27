@@ -6,12 +6,11 @@ USE `biblioteca`;
 CREATE TABLE IF NOT EXISTS `clientes` (
   `cod_cliente` integer PRIMARY KEY,
   `nome` varchar(200),
-  `sexo` char(1),
   `cpf` varchar(14),
   `telefone` varchar(20),
   `email` varchar(200),
   `data_nascimento` varchar(10),
-  `situacao` bit
+  `situacao` boolean 
 );
 
 CREATE TABLE IF NOT EXISTS `livros` (
@@ -20,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `livros` (
   `autor` varchar(200),
   `genero` varchar(50),
   `ano` varchar(4),
-  `status` bit
+  `status` boolean 
 );
 
 CREATE TABLE IF NOT EXISTS `reservas` (
