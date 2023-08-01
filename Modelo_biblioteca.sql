@@ -1,8 +1,10 @@
 # https://dbdiagram.io/d/64c01bde02bd1c4a5eaf25b4
 
+#Criação do banco de dados
 CREATE DATABASE IF NOT EXISTS `biblioteca`;
 USE `biblioteca`;
 
+#Criação da entidade clientes da biblioteca e inserção dos atributos 
 CREATE TABLE IF NOT EXISTS `clientes` (
   `cod_cliente` integer PRIMARY KEY,
   `nome` varchar(200),
@@ -13,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `situacao` boolean 
 );
 
+#Criação da entidade livros da biblioteca e inserção dos atributos 
 CREATE TABLE IF NOT EXISTS `livros` (
   `cod_livro` integer PRIMARY KEY,
   `titulo` varchar(100),
@@ -22,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `livros` (
   `status` boolean 
 );
 
+#Criação da entidade reservas da biblioteca e inserção dos atributos 
 CREATE TABLE IF NOT EXISTS `reservas` (
   `cod_reserva` integer PRIMARY KEY,
   `cod_cliente` int,
@@ -30,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `reservas` (
   `data_retirada` date
 );
 
+#Criação da entidade empréstimos da biblioteca e inserção dos atributos 
 CREATE TABLE IF NOT EXISTS `emprestimos` (
   `cod_emprestimo` integer PRIMARY KEY,
   `cod_cliente` int,
@@ -38,6 +43,8 @@ CREATE TABLE IF NOT EXISTS `emprestimos` (
   `data_emprestimo` date,
   `data_retorno` date
 );
+
+#Relacionamento entre as tabelas
 
 ALTER TABLE `reservas` ADD FOREIGN KEY (`cod_cliente`) REFERENCES `clientes` (`cod_cliente`);
 
