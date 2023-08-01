@@ -1,5 +1,5 @@
 # BD Biblioteca 📚
-Projeto individual do curso de Desenvolvedor Full Stack da Resilia Educação em parceria com a fintech Ebanx de Curitiba.
+Projeto individual do curso de Desenvolvedor Full Stack da Resilia Educação em parceria com a fintech EBANX de Curitiba.
 
 ## Descrição 
 Criação de um banco de dados de uma biblioteca para armazenar informações sobre livros, clientes, empréstimos e reservas. 
@@ -24,7 +24,7 @@ git clone https://github.com/Thzzao/BancoDeDadosBibliotecaResilia.git
 - Para testar o banco foi inserido alguns dados nas tabelas usando o script **Script_populacao.sql**. Cada tabela contém 5 registros para avaliar o funcionamento do sistema. 
 
 ## MER do banco 
-[Banco de dados - Biblioteca ](https://github.com/Thzzao/BancoDeDadosBibliotecaResilia/assets/95200381/77124f04-aa44-487f-83dd-fda3b777de68)
+![Banco de dados - Biblioteca ](https://github.com/Thzzao/BancoDeDadosBibliotecaResilia/assets/95200381/77124f04-aa44-487f-83dd-fda3b777de68)
 
 Para acessar o dbDiagram [clique aqui](https://dbdiagram.io/d/64c01bde02bd1c4a5eaf25b4).
 
